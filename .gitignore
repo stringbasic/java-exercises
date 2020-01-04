@@ -3,3 +3,7 @@
 
 # Ignore Gradle build output directory
 build
+
+# InteliJ files
+.idea
+stale_outputs_checked
