@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Finds pair in an array which sum equals to a given value
  */
-public class ArrayPairSum<T> {
+public class ArrayPairSum {
 
     private int sum;
 
@@ -17,16 +17,16 @@ public class ArrayPairSum<T> {
         this.sum = sum;
     }
 
-    public Pair[] getPairs(int[] elements) {
-        ArrayList<Pair> results = new ArrayList<Pair>();
+    public IntPair[] getPairs(int[] elements) {
+        ArrayList<IntPair> results = new ArrayList<>();
         for (int i = 0; i < elements.length; i++) {
             for (int j = i+1; j < elements.length; j++) {
                 if (elements[i] + elements[j] == this.sum) {
-                    results.add(new Pair(elements[i], elements[j]));
+                    results.add(new IntPair(elements[i], elements[j]));
                 }
             }
         }
 
-        return results.toArray(new Pair[0]);
+        return results.toArray(new IntPair[0]);
     }
 }

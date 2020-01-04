@@ -5,16 +5,16 @@ import java.util.Objects;
 /**
  * Pair container for int elements
  */
-public class Pair {
+public class IntPair {
 
     private int first;
     private int second;
 
-    public Pair() {
+    public IntPair() {
 
     }
 
-    public Pair(int first, int second) {
+    public IntPair(int first, int second) {
         this.first = first;
         this.second = second;
     }
@@ -39,9 +39,9 @@ public class Pair {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Pair pair = (Pair) o;
-        return getFirst() == pair.getFirst() &&
-                getSecond() == pair.getSecond();
+        IntPair intPair = (IntPair) o;
+        return getFirst() == intPair.getFirst() &&
+                getSecond() == intPair.getSecond();
     }
 
     @Override
