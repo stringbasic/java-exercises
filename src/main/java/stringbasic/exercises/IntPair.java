@@ -1,5 +1,7 @@
 package stringbasic.exercises;
 
+import java.util.Objects;
+
 /**
  * Pair container for int elements
  */
@@ -28,5 +30,10 @@ public class IntPair {
         IntPair intPair = (IntPair) o;
         return getFirst() == intPair.getFirst() &&
                 getSecond() == intPair.getSecond();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getFirst(), getSecond());
     }
 }
