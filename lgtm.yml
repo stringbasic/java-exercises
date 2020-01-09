@@ -1,0 +1,14 @@
+path_classifiers:
+  test:
+    - exclude: /
+    - src/test
+    - testsuites
+    - "**/*Test.java"
+extraction: 
+  java:
+    index:
+      gradle:
+        version: 5.6
+      build_command: ./gradlew check
+      java_version: 11
+      xml_mode: disabled
