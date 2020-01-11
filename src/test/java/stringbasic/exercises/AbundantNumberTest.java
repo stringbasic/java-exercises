@@ -38,7 +38,7 @@ public class AbundantNumberTest {
     @Test
     public void testKnownCases() {
         AbundantNumber sut = new AbundantNumber(this.number);
-        Assert.assertEquals(this.abundance, sut.abundance());
-        Assert.assertEquals(this.isAbundant, sut.isAbundant());
+        Assert.assertEquals("number: " + this.number, this.abundance, sut.abundance());
+        Assert.assertEquals("number: " + this.number, this.isAbundant, sut.isAbundant());
     }
 }

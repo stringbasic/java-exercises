@@ -10,12 +10,15 @@ public class AbundantNumber {
 
     public int abundance() {
         int result = 0;
-        for (int i = 1; i <= this.number/2; i++) {
-            if (this.number % i == 0)
+        for (int i = 1; i <= Math.sqrt(this.number); i++) {
+            if (this.number % i == 0) {
                 result += i;
+                if (this.number / i != i)
+                    result += this.number / i;
+            }
         }
 
-        return result;
+        return result - this.number;
     }
 
     public boolean isAbundant() {
