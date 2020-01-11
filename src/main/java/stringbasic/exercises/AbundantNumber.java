@@ -10,7 +10,7 @@ public class AbundantNumber {
 
     public int abundance() {
         int result = 0;
-        for (int i = this.number-1; i>0; i--) {
+        for (int i = 1; i <= this.number/2; i++) {
             if (this.number % i == 0)
                 result += i;
         }
