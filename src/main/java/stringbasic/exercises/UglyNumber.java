@@ -9,6 +9,17 @@ public class UglyNumber {
     }
 
     public boolean isUgly() {
+        if (this.number == 1)
+            return true;
+        canDivide(2);
+        canDivide(3);
+        canDivide(5);
+
         return this.number == 1;
+    }
+
+    private void canDivide(int d) {
+        while (this.number % d == 0)
+            this.number = this.number/d;
     }
 }
