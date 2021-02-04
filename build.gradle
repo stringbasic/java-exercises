@@ -33,12 +33,12 @@ dependencies {
 
 application {
     // Define the main class for the application
-    mainClassName = 'stringbasic.exercises.App'
+    mainClass = 'stringbasic.exercises.App'
 }
 
 jacoco {
     toolVersion = "0.8.5"
-    reportsDir = file("$buildDir/reports/jacoco")
+    reportsDirectory = file("$buildDir/reports/jacoco")
 }
 
 jacocoTestReport {

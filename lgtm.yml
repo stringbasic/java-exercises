@@ -8,7 +8,7 @@ extraction:
   java:
     index:
       gradle:
-        version: 5.6
+        version: 6.8.1
       build_command: ./gradlew check
       java_version: 11
       xml_mode: disabled
